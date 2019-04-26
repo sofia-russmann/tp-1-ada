@@ -32,17 +32,17 @@ main {
 }
 
 .main-img:nth-of-type(1) {
-    margin-left: 0px;
+    margin: 0;
 }
 
 .main-img:nth-of-type(4) {
-    margin-right: -12px;
+    margin: 0;
 }
 
 .container-img {
     position: relative;
     overflow: hidden;
-    margin: 0 5px;
+    margin: 0;
     box-sizing: border-box;
     width: 98%;
 }
