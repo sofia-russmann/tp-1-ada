@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>clichaholic</title>
+    <title>Blog de cocina</title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
 </head>
-<body></body>
+
+<body>
+    <div id="home">
+        <header>
+            <h1 class="title">Mi blog de cocina</h1>
+        </header>
+        <nav>
+            <p class="text-menu"><i class="fas fa-align-justify"></i> MENU</p>
+            <ul class="ul-nav">
+                <li class="nav-item">Home</li>
+                <li class="nav-item"><a href="pages/receta.html">Platos <i class="fas fa-sort-down"></i></a>
+                    <ul class="hover-nav">
+                        <li class="sub-item-platos">Ensalada</li>
+                        <li class="sub-item-platos">Carne</li>
+                        <li class="sub-item-platos">Pavo</li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">Sobre mi</li>
+                <li class="nav-item">Contacto</li>
+            </ul>
+        </nav>
+        <!-- ////////////////////////
+                IMAGENES PRINCIPALES  
+            //////////////////////// -->
+        <div class="main-container-img">
+            <div class="container-img">
+                <img class="main-img" src="img/img-1.jpg" alt="">
+                <div class="hover-main-img">
+                    <p><span class="date">Diciembre 23, 2017 | 21 comentarios</span>
+                        </br>
+                        <span>"Tacos para terminar el día."</span></p>
+                </div>
+            </div>
+            <div class="container-img">
+                <img class="main-img" src="img/img-2.jpg" alt="">
+                <div class="hover-main-img">
+                    <p><span class="date">Diciembre 23, 2017 | 21 comentarios</span>
+                        </br>
+                        <span>"Salmón y verduras para cuando nos queremos dar un gusto."</span></p>
+                </div>
+            </div>
+            <div class="container-img">
+                <img class="main-img" src="img/img-3.jpg" alt="">
+                <div class="hover-main-img">
+                    <p><span class="date">Diciembre 23, 2017 | 21 comentarios</span>
+                        </br>
+                        <span>"Postres sanos y naturales."</span></p>
+                </div>
+            </div>
+            <div class="container-img">
+                <img class="main-img" src="img/img-4.jpg" alt="">
+                <div class="hover-main-img">
+                    <p><span class="date">Diciembre 23, 2017 | 21 comentarios</span>
+                        </br>
+                        <span>"Unas tostadas sabrosas para arrancar bien el día."</span></p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!-- ////////////////////////
+                IMAGENES CATEGORICAS  
+            //////////////////////// -->
+            <div class="tags-container-img">
+                <div class="tags-img">
+                    <img src="img/platos.JPG" alt="">
+                    <p>Platos</p>
+                </div>
+                <div class="tags-img">
+                    <img src="img/recetas.JPG" alt="">
+                    <p>Recetas</p>
+                </div>
+                <div class="tags-img">
+                    <p>Exoticos</p>
+                </div>
+            </div>
+            <div class="post-principal">
+                <!-- ////////////////////////
+                    SECTION PRINCIPAL 
+                //////////////////////// -->
+                <div class="main-posts">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/E0G5Y2SOW0c" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                            <p class="video-text">20 de abril | ¿Cómo preparar las mejores hamburguesas?</p>
+                    </div>
+                    <div class="posts">
+                        <img src="img/nota1.JPG" alt="">
+                        <div class="post-content">
+                            <p class="date"><span>By Maria | Mayo 19, 2017</span><span>20<i class="far fa-heart"></i>
+                                    10<i class="far fa-comments"></i><i class="fas fa-share-alt"></i></span></p>
+                            <h3>Delicias dulces</h3>
+                            <p class="post-text">En este articulo van a poder ver una receta muy simple, sana y muy
+                                rica!</p>
+                            <a class="read-more" href="url">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <img src="img/nota2.JPG" alt="">
+                        <div class="post-content">
+                            <p class="date"><span class="date-data">By Maria | Mayo 19, 2017</span><span class="date-icons">43<i class="far fa-heart"></i>
+                                    70<i class="far fa-comments"></i> </br> <i class="fas fa-share-alt"></i></span></p>
+                            <h3>Comidas simples</h3>
+                            <p class="post-text">En este articulo van a poder ver una receta muy simple, sana y muy
+                                rica!</p>
+                            <a class="read-more" href="url">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <!-- ////////////////////////
+                        ASIDE  
+                    //////////////////////// -->
+                    <h4>Sobre mi</h4>
+                    <img src="" alt="">
+                    <p>Tengo 23 años hace dos que estudio cocina y soy fanática de la comida, espero que les guste mi
+                        contenido.</p>
+                    <h4>Newslatter</p>
+                </aside>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li class="footer-item"><a href="url"><i class="fab fa-facebook-f"></i> <span class="social-media-item">Facebook</a></span></li>
+                <li class="footer-item"><a href="url"><i class="fab fa-twitter"></i> <span class="social-media-item">Twitter</a></span></li>
+                <li class="footer-item"><a href="url"><i class="fab fa-google-plus-g"></i> <span class="social-media-item">Google</a></span></li>
+                <li class="footer-item"><a href="url"><i class="fab fa-linkedin"></i> <span class="social-media-item">Linkedin</a></span></li>
+                <li class="footer-item"><a href="url"><i class="fab fa-instagram"></i> <span class="social-media-item">Instagram</a></span></li>
+                <li class="footer-item"><a href="url"><i class="fab fa-youtube"></i> <span class="social-media-item">Youtube</a></span></li>
+            </ul>
+            <a class="icon-arrow" href="#home"><i class="fas fa-arrow-circle-up"></i></div>
+        </footer>
+    </div>
+</body>
+
 </html>

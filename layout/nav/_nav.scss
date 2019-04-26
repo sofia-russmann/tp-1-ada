@@ -3,19 +3,25 @@ nav {
 }
 
 nav {
-    ul {
+    .ul-nav {
         display: flex;
         justify-content: center;
         flex-direction: row;
-        justify-content: space-evenly;
         text-decoration: none;
         text-transform: uppercase;
         list-style: none;
+        /* justify-content: space-between;*/
     }
 
     li {
         color: $secondary-color;
         font-family: $page-font;
+        /* Agregado */
+        margin: 0 30px;
+    }
+
+    p {
+        visibility: hidden;
     }
 }
 
@@ -24,15 +30,19 @@ nav {
     flex-direction: column;
     visibility: hidden;
     background-color: $third-color;
-    width: auto;
+    /* Editado, anterior: auto.*/
+    width: 80px;
     position: absolute;
     background-color: $hover-item-nav;
     transform: translateX(-30px);
+    list-style: none;
+    z-index: 1;
 }
 
 .sub-item-platos {
     padding: 5px 0;
-    transform: translateX(-15px);
+    /* Anterior: transform: translateX()*/
+    transform: translateX(-40px);
 }
 
 .nav-item {
@@ -47,4 +57,10 @@ nav {
 
 .nav-item:hover .hover-nav {
     visibility: visible;
+}
+
+.ul-nav {
+    p {
+    visibility: hidden;
+    }
 }

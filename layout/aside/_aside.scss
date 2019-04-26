@@ -1,0 +1,16 @@
+aside {
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+aside {
+    h4 {
+        background-color: $button-background-color;
+        color: $main-color;
+        text-align: center;
+        height: 35px;
+    }
+}

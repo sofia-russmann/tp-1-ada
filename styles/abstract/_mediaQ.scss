@@ -1,0 +1,245 @@
+@media screen and (max-width: 350px) {
+    body {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    /* NAV */
+
+    #home {
+       nav {
+            width: 95%;
+            background-color: $hover-background-color;
+            height: 40px;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 20px;
+            z-index: 1;
+           
+       }
+    }
+
+    nav {
+       .ul-nav {
+        position: absolute;
+        background-color: $hover-background-color;
+        display: flex;
+        flex-direction: column;
+        width: 100px; 
+        left: 85px;
+        top: 23px;
+        }
+    }
+
+    nav {
+        p {
+            visibility: visible;
+        }
+    }
+    .text-menu {
+            display: flex;
+            color: $main-color;
+            position: absolute;
+            left: 120px;
+            top: -6px;
+            z-index: 1;
+            font-family: $page-font;
+    }
+
+
+   .ul-nav {
+        
+        visibility: hidden;
+        
+    }
+    
+    .hover-nav {
+        display: none; 
+     }
+
+    /* AGREGADO saqué margin */
+
+    .nav-item  {
+        margin: 0;
+    } 
+    /* NAV HOVER */
+
+    nav:hover .ul-nav {       
+            visibility: visible;
+        
+    }
+
+    /* CONTAINER IMG */
+
+    .container-img:nth-of-type(2),
+    .container-img:nth-of-type(3),
+    .container-img:nth-of-type(4){
+        display: none;
+    }
+
+    .container-img {
+        width: 100%;
+        z-index: 0;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    
+
+    .hover-main-img {
+        display: none;
+    }
+
+    /*
+     TAGS CONTAINER
+    */
+
+    .tags-container-img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 200px;
+
+    }
+
+    .tags-img {
+        width: 350px;
+    }
+
+    .tags-img {
+        img {
+            width: 300px;
+        }
+
+        p {
+            width: 100px;
+            visibility: visible;
+        }
+    }
+
+    .tags-img:nth-of-type(3) {
+        p{
+            background-color: transparent;
+            margin-top: 90px;
+        }
+    }
+
+
+    .video {
+        display: none;
+    }
+
+    .post-principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-posts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .posts {
+        img {
+            display: none;
+        }
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: none;
+    }
+
+    .post-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .post-text {
+        display: flex;
+        text-align: center;
+    }
+
+    .main-posts {
+        .posts:nth-last-of-type(2) {
+            display: none;
+        }
+    }
+
+    .date {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .date-data {
+        display: flex;
+        align-items: flex-start;
+        text-align: center;
+        width: 50%;
+        }
+    
+
+    .date-icons {
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            width: 50%;
+    }
+
+    
+
+    /* ASIDE */
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    aside {
+        p {
+            display: flex;
+            text-align: center;
+        }
+    }
+
+    /* FOOTER */
+
+    .social-media-item {
+        display: none;
+    }
+
+    .icon-arrow {
+            visibility: visible;
+    }
+
+    .icon-arrow {
+        i {
+            color: $title-color;
+        }
+    }
+    
+}
