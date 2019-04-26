@@ -2,15 +2,15 @@
 
 @import "abstract/reseteo";
 
-@import "../layout/header/header";
+@import "layout/header";
 
-@import "../layout/nav/nav";
+@import "layout/nav";
 
-@import "../layout/container/container";
+@import "layout/container";
 
-@import "../layout/aside/aside";
+@import "layout/aside";
 
-@import "../layout/footer/footer";
+@import "layout/footer";
 
 @import "abstract/mediaQ";
 
