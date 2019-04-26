@@ -1,0 +1,317 @@
+
+    body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    }
+
+
+/* 
+===========================================
+ RECETA
+=========================================== 
+*/
+
+#receta {
+    .pagecontainer {
+        display:flex;
+        width:1100px;
+        height:1000px;
+        @media (max-width:520px) {
+            margin-right: -115px;
+        }
+        @media (max-width:350px) {
+            width:350px;
+        }
+    }
+    .banner {
+        width:100%;
+        img{
+            width:100%;
+            height:15%;
+        }
+    }
+    .contentcontainer {
+        width:100%;
+        height:70%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .position {
+        width:100%;
+        height:10%;
+        font-family: $page-font;
+        color:$main-color;
+        display: flex;
+        justify-content: flex-start;
+        margin: 30px 30px 30px 30px;
+        width:40%;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span {
+            color:$secondary-color;
+        }
+     
+        @media (max-width:920px) {
+            display:flex;
+            flex-wrap: wrap;
+            b {
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width:350px) {
+            width: 290px;
+        }
+    }
+    .column {
+        width:750px;
+        display:flex;
+        flex-direction: row;
+        @media (max-width:760px) {
+            flex-direction:column;
+            align-items:center;
+        }
+        @media (max-width:350px) {
+            width: 100%;
+        }
+        .mediacolumn {
+            width:20%;
+            height:85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top:50px;
+            .facebook {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                background-color: blue;
+                height:30px;
+                width:30px;
+                border-radius: 30px;
+                margin-bottom: 20px;
+        
+            }
+            .twitter {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                background-color: lightblue;
+                height:30px;
+                width:30px;
+                border-radius: 30px;
+                margin-bottom: 20px;
+            }
+            .googleplus {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                background-color: orangered;
+                height:30px;
+                width:30px;
+                border-radius: 30px;
+                margin-bottom: 20px;
+            }
+            .instagram {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                background-color: brown;
+                height:30px;
+                width:30px;
+                border-radius: 30px;
+                margin-bottom: 20px;
+            }
+            .pinterest{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                background-color: red;
+                height:30px;
+                width:30px;
+                border-radius: 30px;
+                margin-bottom: 20px;
+            }
+            @media (max-width:760px){
+                width:90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+        .contentcolumn {
+            width:80%;
+            display:flex;
+            flex-direction: column;
+            @media (max-width:760px) {
+                width: 70%;
+                display:flex;
+                flex-direction:center;
+                }
+            @media (max-width:350px) {
+                width: 300px;
+            }
+            .mainpic {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    height:85%;
+                    border-radius: 32px 32px 32px 32px;
+                    @media (max-width:760px) {
+                    width: 80%;
+                    height: 65%;
+                    }
+                    @media (max-width:520px) {
+                    width: 75%;
+                    height: 65%;
+                    }
+                    @media (max-width:350px) {
+                    width:96%;
+                    }
+
+                }
+
+            }
+            .caption {
+                width:80%;
+                font-family: $page-font;
+                display:flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin: -30px 0px 0px 0px;
+                .imgicon {
+                    font-family: $page-font;
+                    display:flex;
+                    flex-direction: row; 
+                    justify-content: flex-end;
+                    transform: translateX(120%);
+                    .far {
+                        margin-left: 20px;
+                    }
+                    .fas {
+                        margin-left: 20px;
+                    }
+                    .number {
+                    font-family: $page-font;
+                    }
+                }
+                @media (max-width:760px) {
+                    width: 80%;
+                    margin-top:20px;
+                    display:flex;
+                    justify-content: center;
+                }
+                @media (max-width:520px) {
+                    width: 75%;
+                    height: 65%;
+                }
+                @media (max-width:350px) {
+                    width:100%;
+                    font-size: 10px;
+                }
+            }
+            div {
+                h2 {
+                    width: 80%;
+                    margin-left: 10px;
+                    @media (max-width:760px) {
+                        width: 70%;
+                        margin-left: 70px;
+                    }
+                    @media (max-width:520px) {
+                        width: 75%;
+                        height: 65%;
+                    }
+                    @media (max-width:350px){
+                        margin-left: 30px;
+                    }
+
+                }
+            }
+            div {
+                .piononotext {
+                    width: 80%;
+                    @media (max-width:760px) {
+                        width: 70%;
+                        margin-left: 50px;
+                    }
+                    @media (max-width:520px) {
+                        width: 75%;
+                        height: 65%;
+                    }
+                    @media (max-width:350px) {
+                        margin-left: 17px;
+                    }
+                }
+            }
+            div {
+                .blockquote {
+                    width: 80%;
+                    @media (max-width:760px) {
+                        width: 70%;
+                        margin-left: 50px;
+                    }
+                    @media (max-width:520px) {
+                        width: 75%;
+                        height: 65%;
+                    }
+                }
+                .quote, .author {
+                    margin-left: 20px;
+                }
+            }
+            div {
+                ul {
+                    list-style:none;
+                    padding:0;
+                }
+                .recipelist {
+                    width:80%;
+                    @media (max-width:760px) {
+                        width: 40%;
+                        margin-left: 7px;
+                    }
+                    @media (max-width:520px) {
+                        width: 75%;
+                        height: 65%;
+                        }
+                }
+            }
+            h2, .piononotext, .quote, .author, .recipelist {
+                font-family: $page-font;
+            }
+            h2, .quote {
+                color: $main-color;
+            }
+            .piononotext, .author, .recipelist {
+                color:$secondary-color;
+            }
+            .blockquote {
+                border-left:1px solid  $title-color;
+            }
+            .recipelist {
+                list-style: none;
+                ul {
+                    .coloritem {
+                        color: $title-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+

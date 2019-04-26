@@ -1,0 +1,104 @@
+/*nav*/
+#receta {
+    nav {
+        width: 100%;
+    }
+    nav {
+        .ul-nav {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            text-decoration: none;
+            text-transform: uppercase;
+            list-style: none;
+        }
+        li {
+            color: $secondary-color;
+            font-family: $page-font;
+            margin: 0 30px;
+        }
+        p {
+            visibility: hidden;
+        }
+    }
+    .hover-nav {
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        background-color: $third-color;
+        width: 80px;
+        position: absolute;
+        background-color: $hover-item-nav;
+        transform: translateX(-30px);
+        list-style: none;
+        z-index: 1;
+    }
+    .sub-item-platos {
+        padding: 5px 0;
+        transform: translateX(-40px);
+    }
+    .ul-nav-item {
+        a {
+            position: relative;
+            color: $secondary-color;
+        }
+        a:visited {
+            color: $secondary-color;
+        }
+    }
+    .ul-nav-item:hover .hover-nav {
+        visibility: visible;
+    }
+    .ul-nav {
+        p {
+        visibility: hidden;
+        }
+    }
+    nav {
+        @media (max-width:350px) {
+            visibility: visible;
+            width: 95%;
+            background-color: $hover-background-color;
+            height: 40px;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 20px;
+            z-index: 1;
+ 
+            p {
+            visibility: visible;
+            }
+            
+                .ul-nav {
+                position: absolute;
+                background-color: $hover-background-color;
+                display: flex;
+                flex-direction: column;
+                width: 100px; 
+                left: 85px;
+                top: 23px;
+                }
+            
+            .text-menu {
+                display: flex;
+                color: $main-color;
+                position: absolute;
+                left: 120px;
+                top: -6px;
+                z-index: 1;
+                font-family: $page-font;
+                }
+            .ul-nav {
+            visibility: hidden;
+            }
+            .hover-nav {
+            display: none; 
+            }
+            /* NAV HOVER */
+            &:hover .ul-nav {       
+            visibility: visible;
+            }
+        }
+    }
+    
+}

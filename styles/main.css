@@ -1,0 +1,729 @@
+/*colores*/
+/*colores de fondo*/
+/*tipografias*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+===========================================
+ RECETA
+=========================================== 
+*/
+#receta .pagecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1100px;
+  height: 1000px;
+}
+
+@media (max-width: 520px) {
+  #receta .pagecontainer {
+    margin-right: -115px;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .pagecontainer {
+    width: 350px;
+  }
+}
+
+#receta .banner {
+  width: 100%;
+}
+
+#receta .banner img {
+  width: 100%;
+  height: 15%;
+}
+
+#receta .contentcontainer {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#receta .position {
+  width: 100%;
+  height: 10%;
+  font-family: "IBM Plex Mono", monospace;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 30px 30px 30px 30px;
+  width: 40%;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#receta .position span {
+  color: #808080;
+}
+
+@media (max-width: 920px) {
+  #receta .position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #receta .position b {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .position {
+    width: 290px;
+  }
+}
+
+#receta .column {
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 760px) {
+  #receta .column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .column {
+    width: 100%;
+  }
+}
+
+#receta .column .mediacolumn {
+  width: 20%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+#receta .column .mediacolumn .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: blue;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#receta .column .mediacolumn .twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: lightblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#receta .column .mediacolumn .googleplus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: orangered;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#receta .column .mediacolumn .instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: brown;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#receta .column .mediacolumn .pinterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+  #receta .column .mediacolumn {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+#receta .column .contentcolumn {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .column .contentcolumn {
+    width: 300px;
+  }
+}
+
+#receta .column .contentcolumn .mainpic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#receta .column .contentcolumn .mainpic img {
+  width: 100%;
+  height: 85%;
+  border-radius: 32px 32px 32px 32px;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn .mainpic img {
+    width: 80%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 520px) {
+  #receta .column .contentcolumn .mainpic img {
+    width: 75%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .column .contentcolumn .mainpic img {
+    width: 96%;
+  }
+}
+
+#receta .column .contentcolumn .caption {
+  width: 80%;
+  font-family: "IBM Plex Mono", monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: -30px 0px 0px 0px;
+}
+
+#receta .column .contentcolumn .caption .imgicon {
+  font-family: "IBM Plex Mono", monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+}
+
+#receta .column .contentcolumn .caption .imgicon .far {
+  margin-left: 20px;
+}
+
+#receta .column .contentcolumn .caption .imgicon .fas {
+  margin-left: 20px;
+}
+
+#receta .column .contentcolumn .caption .imgicon .number {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn .caption {
+    width: 80%;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  #receta .column .contentcolumn .caption {
+    width: 75%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .column .contentcolumn .caption {
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+#receta .column .contentcolumn div h2 {
+  width: 80%;
+  margin-left: 10px;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn div h2 {
+    width: 70%;
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 520px) {
+  #receta .column .contentcolumn div h2 {
+    width: 75%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .column .contentcolumn div h2 {
+    margin-left: 30px;
+  }
+}
+
+#receta .column .contentcolumn div .piononotext {
+  width: 80%;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn div .piononotext {
+    width: 70%;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  #receta .column .contentcolumn div .piononotext {
+    width: 75%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 350px) {
+  #receta .column .contentcolumn div .piononotext {
+    margin-left: 17px;
+  }
+}
+
+#receta .column .contentcolumn div .blockquote {
+  width: 80%;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn div .blockquote {
+    width: 70%;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  #receta .column .contentcolumn div .blockquote {
+    width: 75%;
+    height: 65%;
+  }
+}
+
+#receta .column .contentcolumn div .quote, #receta .column .contentcolumn div .author {
+  margin-left: 20px;
+}
+
+#receta .column .contentcolumn div ul {
+  list-style: none;
+  padding: 0;
+}
+
+#receta .column .contentcolumn div .recipelist {
+  width: 80%;
+}
+
+@media (max-width: 760px) {
+  #receta .column .contentcolumn div .recipelist {
+    width: 40%;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width: 520px) {
+  #receta .column .contentcolumn div .recipelist {
+    width: 75%;
+    height: 65%;
+  }
+}
+
+#receta .column .contentcolumn h2, #receta .column .contentcolumn .piononotext, #receta .column .contentcolumn .quote, #receta .column .contentcolumn .author, #receta .column .contentcolumn .recipelist {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#receta .column .contentcolumn h2, #receta .column .contentcolumn .quote {
+  color: #000000;
+}
+
+#receta .column .contentcolumn .piononotext, #receta .column .contentcolumn .author, #receta .column .contentcolumn .recipelist {
+  color: #808080;
+}
+
+#receta .column .contentcolumn .blockquote {
+  border-left: 1px solid #ff6600;
+}
+
+#receta .column .contentcolumn .recipelist {
+  list-style: none;
+}
+
+#receta .column .contentcolumn .recipelist ul .coloritem {
+  color: #ff6600;
+}
+
+/*nav*/
+#receta nav {
+  width: 100%;
+}
+
+#receta nav .ul-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+#receta nav li {
+  color: #808080;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0 30px;
+}
+
+#receta nav p {
+  visibility: hidden;
+}
+
+#receta .hover-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+  background-color: #ffffff;
+  width: 80px;
+  position: absolute;
+  background-color: #dddddd;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  list-style: none;
+  z-index: 1;
+}
+
+#receta .sub-item-platos {
+  padding: 5px 0;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+#receta .ul-nav-item a {
+  position: relative;
+  color: #808080;
+}
+
+#receta .ul-nav-item a:visited {
+  color: #808080;
+}
+
+#receta .ul-nav-item:hover .hover-nav {
+  visibility: visible;
+}
+
+#receta .ul-nav p {
+  visibility: hidden;
+}
+
+@media (max-width: 350px) {
+  #receta nav {
+    visibility: visible;
+    width: 95%;
+    background-color: #f85726;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+    /* NAV HOVER */
+  }
+  #receta nav p {
+    visibility: visible;
+  }
+  #receta nav .ul-nav {
+    position: absolute;
+    background-color: #f85726;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+    left: 85px;
+    top: 23px;
+  }
+  #receta nav .text-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #000000;
+    position: absolute;
+    left: 120px;
+    top: -6px;
+    z-index: 1;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  #receta nav .ul-nav {
+    visibility: hidden;
+  }
+  #receta nav .hover-nav {
+    display: none;
+  }
+  #receta nav:hover .ul-nav {
+    visibility: visible;
+  }
+}
+
+/*footer*/
+footer {
+  width: 90%;
+  height: 5%;
+  color: #808080;
+  font-size: 12px;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.87);
+}
+
+footer .mediaword {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+footer .fa-facebook-f {
+  color: #808080;
+}
+
+footer .icon-arrow {
+  visibility: hidden;
+  -webkit-transform: translate(-150px, 45px);
+          transform: translate(-150px, 45px);
+}
+
+@media (max-width: 760px) {
+  footer {
+    margin-right: 40px;
+  }
+  footer .mediaword {
+    display: none;
+  }
+  footer i {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 350px) {
+  footer {
+    width: 330px;
+  }
+  footer .icon-arrow {
+    visibility: visible;
+  }
+  footer .icon-arrow i {
+    color: #ff6600;
+  }
+}
+
+hr {
+  color: #808080;
+  height: 1px;
+  border: 0;
+}
+
+/*blogtitle*/
+.title {
+  width: 100%;
+  height: 40%;
+  font-family: "Indie Flower", cursive;
+  color: #ff6600;
+  font-weight: 500px;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 350px) {
+  .title h1 {
+    width: 85%;
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
