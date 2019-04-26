@@ -7,7 +7,6 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   height: 100%;
 }
 
@@ -27,14 +26,17 @@ body {
           align-items: center;
 }
 
-.title {
-  color: orange;
+#home header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.title {
+  color: orange;
   font-family: "Indie Flower", cursive;
   font-size: 50px;
 }
@@ -241,11 +243,6 @@ main img {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  visibility: hidden;
-}
-
-.tags-img:hover p {
-  visibility: visible;
 }
 
 .tags-img:nth-of-type(3) p {
@@ -417,13 +414,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -431,6 +424,7 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 85%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -439,12 +433,11 @@ footer ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #dddddd;
-  padding-bottom: 15px;
+  padding: 0 0 15px 0;
 }
 
 .footer-item {
   font-family: "IBM Plex Mono", monospace;
-  margin: 0 20px;
   list-style: none;
 }
 
@@ -456,13 +449,12 @@ footer ul {
 
 .icon-arrow {
   visibility: hidden;
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
+  -webkit-transform: translate(-150px, 45px);
+          transform: translate(-150px, 45px);
 }
 
 @media screen and (max-width: 350px) {
   body {
-    width: 100%;
     max-width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -471,9 +463,9 @@ footer ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
