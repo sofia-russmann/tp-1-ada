@@ -91,6 +91,10 @@
     .container-img {
         width: 100%;
         z-index: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,10 +122,8 @@
     }
 
     .tags-img {
-        width: 350px;
-    }
-
-    .tags-img {
+        margin: 20px 0;
+        
         img {
             width: 300px;
         }
@@ -184,6 +186,10 @@
         .posts:nth-last-of-type(2) {
             display: none;
         }
+    }
+
+    .main-img {
+        margin: 0;
     }
 
     .date {
