@@ -1,5 +1,12 @@
 nav {
     width: 100%;
+    ul {
+        li {
+            a {
+                color:$secondary-color;
+            }
+        }
+    }
 }
 
 nav {
@@ -17,7 +24,7 @@ nav {
         color: $secondary-color;
         font-family: $page-font;
         /* Agregado */
-        margin: 0 30px;
+        margin: 0 25px;
     }
 
     p {

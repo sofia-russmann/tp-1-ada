@@ -1,11 +1,10 @@
-
-    body {
+body {
     margin:0;
     padding:0;
     box-sizing: border-box;
     width:100%;
     height:100%;
-    }
+}
 
 
 /* 
@@ -22,6 +21,7 @@
         @media (max-width:520px) {
             margin-right: -115px;
         }
+        /*MOBILE*/
         @media (max-width:350px) {
             width:350px;
         }
@@ -47,16 +47,11 @@
         color:$main-color;
         display: flex;
         justify-content: flex-start;
-        margin: 30px 30px 30px 30px;
+        margin: 1% 0px 5% -47%;
         width:40%;
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
         span {
             color:$secondary-color;
         }
-     
         @media (max-width:920px) {
             display:flex;
             flex-wrap: wrap;
@@ -64,139 +59,149 @@
                 margin-bottom: 15px;
             }
         }
+        @media (max-width:470px) {
+            width: 80%;
+            margin:0;
+        }
+        /*MOBILE*/
         @media (max-width:350px) {
             width: 290px;
+            margin:0;
         }
     }
     .column {
-        width:750px;
+        width:54%;
         display:flex;
         flex-direction: row;
         @media (max-width:760px) {
             flex-direction:column;
             align-items:center;
+            width:90%;
         }
+        /*MOBILE*/
         @media (max-width:350px) {
             width: 100%;
         }
         .mediacolumn {
             width:20%;
-            height:85%;
+            height:100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            margin-top:50px;
+            justify-content:flex-start;
+            margin-top: 11%;
             .facebook {
+                background-color: #3b5998 ;
                 display:flex;
                 justify-content:center;
                 align-items:center;
                 color:white;
-                background-color: blue;
                 height:30px;
                 width:30px;
-                border-radius: 30px;
+                border-radius: 50%;
+                font-size:22px;
                 margin-bottom: 20px;
-        
             }
             .twitter {
+                background-color: #00aced;
                 display:flex;
                 justify-content:center;
                 align-items:center;
                 color:white;
-                background-color: lightblue;
                 height:30px;
                 width:30px;
-                border-radius: 30px;
+                border-radius: 50%;
+                font-size:22px;
                 margin-bottom: 20px;
             }
             .googleplus {
+                background-color: #d34836;
                 display:flex;
                 justify-content:center;
                 align-items:center;
                 color:white;
-                background-color: orangered;
                 height:30px;
                 width:30px;
-                border-radius: 30px;
+                border-radius: 50%;
+                font-size:22px;
                 margin-bottom: 20px;
             }
             .instagram {
+                background-color: brown;
                 display:flex;
                 justify-content:center;
                 align-items:center;
                 color:white;
-                background-color: brown;
                 height:30px;
                 width:30px;
-                border-radius: 30px;
+                border-radius: 50%;
+                font-size:22px;
+                margin-bottom: 20px; 
+            }
+            .pinterest { 
+                background-color: red;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                height:30px;
+                width:30px;
+                border-radius: 50%;
+                font-size:22px;
                 margin-bottom: 20px;
             }
-            .pinterest{
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                color:white;
-                background-color: red;
-                height:30px;
-                width:30px;
-                border-radius: 30px;
-                margin-bottom: 20px;
+            @media (min-width:761px) {
+                margin-top: 0;
+            }
+            @media (min-width:825px) {
+                margin-top: 2%;
+            }
+            @media (min-width:900px) {
+                margin-top: 4%;
+            }
+            @media (min-width:1000px) {
+                margin-top: 7%;
+            }
+            @media (min-width:1105px) {
+                margin-top: 8.5%;
             }
             @media (max-width:760px){
-                width:90%;
+                width:78%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
             }
         }
         .contentcolumn {
-            width:80%;
+            width:100%;
             display:flex;
             flex-direction: column;
             @media (max-width:760px) {
-                width: 70%;
+                width: 100%;
                 display:flex;
                 flex-direction:center;
                 }
+                /*MOBILE*/
             @media (max-width:350px) {
                 width: 300px;
             }
             .mainpic {
-                display: flex;
-                justify-content: center;
                 img {
                     width: 100%;
-                    height:85%;
+                    height:100%;
                     border-radius: 32px 32px 32px 32px;
-                    @media (max-width:760px) {
-                    width: 80%;
-                    height: 65%;
-                    }
-                    @media (max-width:520px) {
-                    width: 75%;
-                    height: 65%;
-                    }
-                    @media (max-width:350px) {
-                    width:96%;
-                    }
-
                 }
-
             }
             .caption {
-                width:80%;
+                width:100%;
                 font-family: $page-font;
-                display:flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                margin: -30px 0px 0px 0px;
+                color:$secondary-color;
+                display: flex;
+                justify-content:space-between;
+                margin: 5% 0 0 0;
                 .imgicon {
                     font-family: $page-font;
                     display:flex;
-                    flex-direction: row; 
-                    justify-content: flex-end;
-                    transform: translateX(120%);
                     .far {
                         margin-left: 20px;
                     }
@@ -207,69 +212,45 @@
                     font-family: $page-font;
                     }
                 }
-                @media (max-width:760px) {
-                    width: 80%;
-                    margin-top:20px;
+                
+                @media (max-width:520px) {
+                    width: 100%;
+                    height: 65%;
+                    font-size: 13px;
                     display:flex;
                     justify-content: center;
                 }
-                @media (max-width:520px) {
-                    width: 75%;
-                    height: 65%;
+                @media (max-width:360px) {
+                    font-size: 11px;
                 }
+                /*MOBILE*/
                 @media (max-width:350px) {
-                    width:100%;
                     font-size: 10px;
                 }
             }
             div {
                 h2 {
                     width: 80%;
-                    margin-left: 10px;
-                    @media (max-width:760px) {
-                        width: 70%;
-                        margin-left: 70px;
-                    }
-                    @media (max-width:520px) {
-                        width: 75%;
-                        height: 65%;
-                    }
-                    @media (max-width:350px){
-                        margin-left: 30px;
-                    }
-
+                    margin-left: 3%;
                 }
             }
             div {
                 .piononotext {
                     width: 80%;
-                    @media (max-width:760px) {
-                        width: 70%;
-                        margin-left: 50px;
-                    }
-                    @media (max-width:520px) {
-                        width: 75%;
-                        height: 65%;
-                    }
-                    @media (max-width:350px) {
-                        margin-left: 17px;
-                    }
                 }
             }
             div {
                 .blockquote {
-                    width: 80%;
-                    @media (max-width:760px) {
-                        width: 70%;
-                        margin-left: 50px;
-                    }
-                    @media (max-width:520px) {
-                        width: 75%;
-                        height: 65%;
-                    }
+                    width: 100%;
                 }
                 .quote, .author {
-                    margin-left: 20px;
+                    margin-left: 4%;
+                }
+                .quote {
+                    margin-top: 0;
+                }
+                .author {
+                    margin-bottom:0;
                 }
             }
             div {
@@ -286,7 +267,7 @@
                     @media (max-width:520px) {
                         width: 75%;
                         height: 65%;
-                        }
+                    }
                 }
             }
             h2, .piononotext, .quote, .author, .recipelist {
@@ -313,5 +294,3 @@
     }
 
 }
-
-
