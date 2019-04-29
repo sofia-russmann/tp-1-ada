@@ -70,7 +70,7 @@ nav li {
   color: #808080;
   font-family: "IBM Plex Mono", monospace;
   /* Agregado */
-  margin: 0 25px;
+  margin: 0 5%;
 }
 
 nav p {
@@ -753,6 +753,22 @@ body {
  RECETA
 =========================================== 
 */
+#receta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #receta .pagecontainer {
   display: -webkit-box;
   display: -ms-flexbox;
