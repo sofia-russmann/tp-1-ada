@@ -6,7 +6,7 @@
 
 @import "layout/nav";
 
-@import "layout/container";
+@import "pages/container";
 
 @import "layout/aside";
 
@@ -14,7 +14,7 @@
 
 @import "abstract/mediaQ";
 
-@import '../styles/pages/receta';
+@import 'pages/receta';
 
 @import 'components/blogtitle';
 

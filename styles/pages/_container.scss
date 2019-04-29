@@ -1,13 +1,15 @@
-main {
+#home {
+    main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 85%;
     align-items: center;
     font-family: $page-font;
+    }
 }
 
-main {
+#home main {
     img {
         border-radius: 30px;
       }
@@ -78,13 +80,14 @@ main {
 
 .tags-container-img {
     img {
-        width: 90%;
+        width: 100%;
     }
 }
 
 .tags-img {
-    width: 100%;
+    width: 90%;
     position: relative;
+    margin: 0 1%;
 }
 
 .tags-container-img {
@@ -98,8 +101,8 @@ main {
     p {
         position: absolute;
         background-color: $white-background-color;
-        width: 150px;
-        height: 30px;
+        width: 60%;
+        height: 22%;
         border-radius: 25px;
         top: 50%; 
         right: 50%;
