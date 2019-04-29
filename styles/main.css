@@ -469,7 +469,7 @@ footer .icon-arrow {
 
 @media (max-width: 350px) {
   footer {
-    width: 350px;
+    width: 100%;
   }
   footer .icon-arrow {
     visibility: visible;
